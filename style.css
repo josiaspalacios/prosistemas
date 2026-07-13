@@ -263,30 +263,42 @@ body{
 }
 
 /* ===== CONTACTO ===== */
+
 .contacto form{
     background:#ffffff;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.contacto form:hover{
+    transform:translateY(-5px);
 }
 
 .contacto input,
 .contacto textarea{
-    border-radius:10px;
+    border-radius:12px;
     border:1px solid #ddd;
-    padding:10px;
+    padding:12px;
+    font-size:15px;
+    transition:.3s;
 }
 
 .contacto input:focus,
 .contacto textarea:focus{
     border-color:#0d6efd;
-    box-shadow:0 0 5px rgba(13,110,253,.3);
+    box-shadow:0 0 8px rgba(13,110,253,.3);
+    outline:none;
 }
 
 .contacto button{
     border-radius:30px;
     font-weight:bold;
+    padding:12px;
+    font-size:16px;
 }
+
 input[type="tel"]{
     letter-spacing:1px;
 }

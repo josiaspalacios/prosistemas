@@ -338,40 +338,43 @@
 
 </section>
 
+<!-- formulario-->
+
 <section class="contacto container my-5">
-    <h2 class="titulo-seccion mb-4">Te contactamos</h2>
+    <h2 class="titulo-seccion mb-4">Contáctanos</h2>
 
     <div class="row justify-content-center">
         <div class="col-md-6">
 
-            <form>
+            <form action="https://formsubmit.co/palaciosangeljosias@gmail.com" method="POST">
+
+                
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="gracias.html">
+
                 <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Nombre completo" required>
+                    <input type="text" name="nombre" class="form-control" placeholder="Nombre completo" required>
                 </div>
 
                 <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Correo electrónico" required>
-                </div>
-                <div class="mb-3">
-                      <input type="tel" class="form-control" placeholder="Número de teléfono" pattern="[0-9]{10}" required>
-                </div>
-               
-
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Asunto">
+                    <input type="email" name="email" class="form-control" placeholder="Correo electrónico" required>
                 </div>
 
                 <div class="mb-3">
-                    <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+                    <input type="tel" name="telefono" class="form-control" placeholder="Número de teléfono" pattern="[0-9]{10}">
+                </div>
+
+                <div class="mb-3">
+                    <textarea name="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+
             </form>
 
         </div>
     </div>
 </section>
-
 
 
 
