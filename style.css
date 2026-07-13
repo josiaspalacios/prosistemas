@@ -261,3 +261,32 @@ body{
         height:160px;
     }
 }
+
+/* ===== CONTACTO ===== */
+.contacto form{
+    background:#ffffff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.contacto input,
+.contacto textarea{
+    border-radius:10px;
+    border:1px solid #ddd;
+    padding:10px;
+}
+
+.contacto input:focus,
+.contacto textarea:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 5px rgba(13,110,253,.3);
+}
+
+.contacto button{
+    border-radius:30px;
+    font-weight:bold;
+}
+input[type="tel"]{
+    letter-spacing:1px;
+}
