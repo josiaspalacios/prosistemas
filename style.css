@@ -1,21 +1,18 @@
-
-/*GENERAL*/
-
+/* GENERAL */
 body{
     background:#eef3f8;
     color:#0b1320;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-/*NAVBAR*/
-
+/* NAVBAR */
 .mi-navbar{
     min-height:70px;
     background:#071426 !important;
 }
 
 .logo{
-    height:80px;
+    height:70px;
     transition:.3s;
 }
 
@@ -23,25 +20,22 @@ body{
     transform:scale(1.05);
 }
 
-/*BUSCADOR        */
-
+/*  BUSCADOR  */
 .buscador{
     width:100%;
     max-width:420px;
 }
 
-.buscador input{
+.buscador input,
+.buscador button{
     border-radius:30px;
 }
 
 .buscador button{
-    width:auto;
-    border-radius:30px;
     padding:0 20px;
 }
 
-/*  MENU*/
-
+/*  MENU  */
 .navbar-nav .nav-link{
     color:white;
     position:relative;
@@ -68,22 +62,70 @@ body{
     width:100%;
 }
 
-/*  CARRUSEL*/
+/*  CARRUSEL (FIX PRO 🔥)  */
+.carousel-item{
+    height:220px;
+    position:relative;
+}
 
 .carousel-item img{
     width:100%;
-    height:500px;
+    height:100%;
     object-fit:cover;
 }
 
-/* TITULOS SECCIONES*/
+/*  TEXTO BANNER  */
+.banner-texto{
+    position:absolute;
+    top:50%;
+    left:6%;
+    transform:translateY(-50%);
+    max-width:500px;
+    z-index:10;
+}
 
+.banner-texto h1{
+    font-family:'Poppins', sans-serif;
+    font-size:48px;
+    font-weight:800;
+    text-transform:uppercase;
+    margin-bottom:15px;
+    color:#fff;
+}
+
+.banner-texto .azul{
+    color:#38BDF8;
+}
+
+.banner-texto p{
+    font-size:18px;
+    color:#D1D5DB;
+    margin-bottom:20px;
+    text-shadow:2px 2px 10px rgba(0,0,0,.4);
+}
+
+.btn-banner{
+    padding:12px 28px;
+    background:#2563EB;
+    color:#fff;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:700;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(37,99,235,.4);
+}
+
+.btn-banner:hover{
+    background:#1D4ED8;
+    transform:translateY(-3px);
+}
+
+/*  TITULOS  */
 .titulo-seccion{
     display:flex;
     align-items:center;
     justify-content:center;
     gap:20px;
-    color:#0b1320;
     font-weight:bold;
 }
 
@@ -96,8 +138,7 @@ body{
     background:linear-gradient(to right,#0d6efd,#ffc107);
 }
 
-/* CATEGORÍAS*/
-
+/*  CATEGORIAS  */
 .categoria{
     background:#f3f6fb;
     border:none;
@@ -109,7 +150,7 @@ body{
 }
 
 .categoria:hover{
-    transform:translateY(-10px);
+    transform:translateY(-8px);
     box-shadow:0 15px 30px rgba(0,0,0,.18);
 }
 
@@ -118,67 +159,25 @@ body{
     object-fit:contain;
 }
 
-.categoria .btn{
-    border-radius:30px;
-    width:100%;
-}
-
-/* WHATSAPP*/
-
-.whatsapp{
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    z-index:9999;
-}
-
-.whatsapp img{
-    width:60px;
-    transition:.3s;
-}
-
-.whatsapp img:hover{
-    transform:scale(1.1);
-}
-
-/*PRODUCTOS SWIPER*/
-
-.mySwiper{
-    padding:25px 50px;
-}
-
-.swiper-slide{
-    height:auto;
-}
-
-/*TARJETAS*/
-
+/*  TARJETAS  */
 .card{
     border:none;
     border-radius:18px;
     overflow:hidden;
-    background:#ffffff;
-    height:430px;
+    background:#fff;
+    height:420px;
     transition:.3s;
     box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
 .card:hover{
     transform:translateY(-8px);
-    box-shadow:0 18px 35px rgba(0,0,0,.18);
 }
 
 .card-img-top{
-    width:100%;
-    height:220px;
+    height:200px;
     object-fit:contain;
     padding:15px;
-    background:#fff;
-    transition:.3s;
-}
-
-.card:hover .card-img-top{
-    transform:scale(1.05);
 }
 
 .card-body{
@@ -188,209 +187,77 @@ body{
 }
 
 .card-body h5{
-    font-size:18px;
+    font-size:17px;
     font-weight:bold;
-    color:#0b1320;
 }
 
 .card-body p{
-    font-size:20px;
-    margin:10px 0;
+    font-size:18px;
 }
 
-.card .btn{
-    width:100%;
-    border-radius:30px;
-    font-weight:600;
-}
-
-/*BOTONES SWIPER*/
-
-.swiper-button-next,
-.swiper-button-prev{
-    color:#0d6efd;
-    font-weight:bold;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover{
-    color:#084298;
-}
-
-/*RESPONSIVE*/
-
-@media (max-width:992px){
-
-.logo{
-    height:65px;
-}
-
-.carousel-item img{
-    height:320px;
-}
-
-.buscador{
-    margin:15px auto;
-}
-
+/*  SWIPER  */
 .mySwiper{
     padding:20px;
 }
 
+.swiper-button-next,
+.swiper-button-prev{
+    color:#0d6efd;
 }
 
-@media (max-width:768px){
-
-.logo{
-    height:60px;
-}
-
-.carousel-item img{
-    height:220px;
-}
-
-.mySwiper{
-    padding:15px;
-}
-
-.card{
-    height:400px;
-}
-
-.card-img-top{
-    height:180px;
-}
-
-}
-
-@media (max-width:576px){
-
-.carousel-item img{
-    height:180px;
-}
-
-.card{
-    height:380px;
-}
-
-.card-body h5{
-    font-size:16px;
-}
-
-.card-body p{
-    font-size:18px;
+/*  WHATSAPP  */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:9999;
 }
 
 .whatsapp img{
     width:55px;
 }
 
-}
-/*TEXTO ENCIMA DEL CARRUSEL */
-
-.carousel-item{
-    position: relative;
-}
-
-.banner-texto{
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    max-width: 550px;
-    z-index: 10;
-}
-
-.banner-texto h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 65px;
-    font-weight: 800;
-    line-height: 1.1;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-}
-
-.banner-texto .blanco{
-    color: #FFFFFF;
-}
-
-.banner-texto .azul{
-    color: #38BDF8;
-}
-
-.banner-texto p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    color: #D1D5DB;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 10px rgba(0,0,0,.4);
-}
-
-.btn-banner{
-    display: inline-block;
-    padding: 15px 35px;
-    background: #2563EB;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    transition: .3s ease;
-    box-shadow: 0 10px 25px rgba(37,99,235,.4);
-}
-
-.btn-banner:hover{
-    background: #1D4ED8;
-    color: #FFFFFF;
-    transform: translateY(-3px);
-}
-
-/* Responsive */
-
-@media (max-width: 992px){
-
-    .banner-texto{
-        left: 6%;
-        max-width: 420px;
+/*  RESPONSIVE  */
+@media (min-width:768px){
+    .carousel-item{
+        height:400px;
     }
 
     .banner-texto h1{
-        font-size: 42px;
+        font-size:42px;
     }
-
-    .banner-texto p{
-        font-size: 16px;
-    }
-
-    .btn-banner{
-        padding: 12px 28px;
-        font-size: 16px;
-    }
-
 }
 
-@media (max-width:768px){
+@media (min-width:1200px){
+    .carousel-item{
+        height:500px;
+    }
+}
+
+@media (max-width:576px){
 
     .banner-texto{
-        left: 5%;
-        max-width: 300px;
+        max-width:250px;
     }
 
     .banner-texto h1{
-        font-size: 28px;
+        font-size:22px;
     }
 
     .banner-texto p{
-        font-size: 14px;
-        margin-bottom: 15px;
+        font-size:13px;
     }
 
     .btn-banner{
-        padding: 10px 22px;
-        font-size: 14px;
+        font-size:13px;
+        padding:8px 18px;
     }
 
+    .card{
+        height:360px;
+    }
+
+    .card-img-top{
+        height:160px;
+    }
 }
