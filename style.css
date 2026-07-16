@@ -3,6 +3,9 @@ body{
     background:#eef3f8;
     color:#0b1320;
     font-family:Arial, Helvetica, sans-serif;
+    padding-top:90px;
+
+    
 }
 
 /* NAVBAR */
@@ -62,10 +65,12 @@ body{
     width:100%;
 }
 
-/*  CARRUSEL (FIX PRO 🔥)  */
+/*  CARRUSEL   */
 .carousel-item{
-    height:220px;
-    position:relative;
+    position: relative;
+    height: 70vh;
+    min-height: 280px;
+    max-height: 550px;
 }
 
 .carousel-item img{
@@ -217,49 +222,49 @@ body{
     width:55px;
 }
 
-/*  RESPONSIVE  */
-@media (min-width:768px){
+
+/* TABLETS */
+@media (max-width:992px){
+
     .carousel-item{
-        height:400px;
+        height:55vh;
+        min-height:300px;
     }
 
     .banner-texto h1{
-        font-size:42px;
+        font-size:34px;
     }
+
 }
 
-@media (min-width:1200px){
-    .carousel-item{
-        height:500px;
-    }
-}
-
+/* CELULARES */
 @media (max-width:576px){
 
+    .carousel-item{
+        height:320px;
+    }
+
     .banner-texto{
-        max-width:250px;
+        left:20px;
+        right:20px;
+        max-width:220px;
     }
 
     .banner-texto h1{
         font-size:22px;
+        line-height:1.1;
     }
 
     .banner-texto p{
         font-size:13px;
+        margin-bottom:10px;
     }
 
     .btn-banner{
-        font-size:13px;
         padding:8px 18px;
+        font-size:13px;
     }
 
-    .card{
-        height:360px;
-    }
-
-    .card-img-top{
-        height:160px;
-    }
 }
 
 /* CONTACTO */
