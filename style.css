@@ -19,6 +19,7 @@ body{
     transition:.3s;
 }
 
+
 .logo:hover{
     transform:scale(1.05);
 }
@@ -210,6 +211,7 @@ body{
 }
 
 
+
 /* TABLETS */
 @media (max-width:992px){
 
@@ -334,4 +336,12 @@ input[type="tel"]{
 }
 iframe {
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+/*  foking logo de whasasdaifief todo canson  */
+
+
+.whatsapp-btn {
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
