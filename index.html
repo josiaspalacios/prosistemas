@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="img/logo1.ico" type="image/png" height="20px" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/logo1.ico" type="image/png" height="20px" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -25,12 +25,12 @@
       class="navbar navbar-expand-lg navbar-dark bg-dark shadow mi-navbar shadow-sm fixed-top"
     >
       <div class="container">
-        <!-- LOGO -->
+        <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img src="img/logo1.png" alt="Logo" class="logo" />
         </a>
 
-        <!-- BOTÓN  -->
+        <!-- Boton  -->
         <button
           class="navbar-toggler"
           type="button"
@@ -42,10 +42,10 @@
 
         <!-- CONTENIDO -->
         <div class="collapse navbar-collapse" id="navbarContenido">
-          <!-- MENÚ -->
+          <!-- Menu -->
           <ul class="navbar-nav ms-auto text-center">
             <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
+              <a class="nav-link" href="servicios/servicios.html">Servicios</a>
             </li>
 
             <!-- DROPDOWN TECNOLOGÍA -->
@@ -59,21 +59,26 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
                 <li>
-                  <a class="dropdown-item" href="portatiles.html">Portátiles</a>
+                  <a class="dropdown-item" href="equipos/equipos.html"
+                    >Equipos</a
+                  >
                 </li>
-                <li><a class="dropdown-item" href="pcs.html">PCs</a></li>
-              
+
                 <li>
                   <a class="dropdown-item" href="celulares.html">Celulares</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="componentes.html">Componentes</a>
+                  <a class="dropdown-item" href="componentes.html"
+                    >Componentes</a
+                  >
                 </li>
               </ul>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="accesorios.html">Accesorios</a>
+              <a class="nav-link" href="accesorios/accesorios.html"
+                >Accesorios</a
+              >
             </li>
 
             <li class="nav-item">
@@ -138,25 +143,7 @@
               Equipos gamer, empresariales y de estudio con el mejor
               rendimiento.
             </p>
-            <a href="portatiles.html" class="btn-banner">Ver portátiles</a>
-          </div>
-        </div>
-
-        <!-- PCs -->
-        <div class="carousel-item">
-          <img src="imgcarrusel/pc.jpeg" class="d-block w-100" alt="PCs" />
-
-          <div class="banner-texto">
-            <h1>
-              PCS DE<br /><span class="blanco">ALTO</span><br /><span
-                class="azul"
-                >RENDIMIENTO</span
-              >
-            </h1>
-            <p>
-              Computadores ideales para gaming, trabajo y creación de contenido.
-            </p>
-            <a href="pc.html" class="btn-banner">Ver equipos</a>
+            <a href="Equipos.html" class="btn-banner">Ver equipos</a>
           </div>
         </div>
 
@@ -201,7 +188,7 @@
     <section class="container my-5">
       <h2 class="titulo-seccion my-5">Categorías principales</h2>
 
-      <div class="row row-cols-3 row-cols-md-3 row-cols-lg-4 g-5">
+      <div class="row row-cols-2 row-cols-md-4 row-cols-lg-3 g-5">
         <!-- t1 -->
         <div class="col">
           <div class="card categoria h-100 text-center">
@@ -211,26 +198,15 @@
               alt=""
             />
             <div class="card-body">
-              <h6 class="fw-bold">Portátiles</h6>
+              <h6 class="fw-bold">Equipos</h6>
               <a href="#" class="btn btn-primary btn-sm rounded-pill"
                 >Ver más</a
               >
             </div>
           </div>
         </div>
+
         <!-- t2 -->
-        <div class="col">
-          <div class="card categoria h-100 text-center">
-            <img src="imgtarjetas/pc.jpg" class="card-img-top p-3" alt="" />
-            <div class="card-body">
-              <h6 class="fw-bold">PCs</h6>
-              <a href="#" class="btn btn-primary btn-sm rounded-pill"
-                >Ver más</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- t3 -->
         <div class="col">
           <div class="card categoria h-100 text-center">
             <img
@@ -246,9 +222,8 @@
             </div>
           </div>
         </div>
-        <!-- t4 -->
-       
-        <!-- t5 -->
+
+        <!-- t3 -->
         <div class="col">
           <div class="card categoria h-100 text-center">
             <img
@@ -264,8 +239,7 @@
             </div>
           </div>
         </div>
-        <!-- t6 -->
-       
+        <!-- t4 -->
       </div>
     </section>
 
