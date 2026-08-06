@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../accesorios.css" />
+    <link rel="stylesheet" href="accesorios.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -51,11 +51,13 @@
           <!-- MENÚ -->
           <ul class="navbar-nav ms-auto text-center">
             <li class="nav-item">
-              <a class="nav-link" href="../servicios/servicios.html">Servicios</a>
+              <a class="nav-link" href="../servicios/servicios.html"
+                >Servicios</a
+              >
             </li>
 
             <!-- DROPDOWN TECNOLOGÍA -->
-           <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -65,20 +67,18 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
                 <li>
-                  <a class="dropdown-item" href="../equipos/equipos.html">Equipos</a>
+                  <a class="dropdown-item" href="../equipos/equipos.html"
+                    >Equipos</a
+                  >
                 </li>
 
                 <li>
-                  <a class="dropdown-item" href="../celulares.html">Celulares</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../componentes.html"
-                    >Componentes</a
+                  <a class="dropdown-item" href="../celulares.html"
+                    >Celulares</a
                   >
                 </li>
               </ul>
             </li>
-
 
             <li class="nav-item">
               <a class="nav-link" href="accesorios/accesorios.html"
@@ -100,6 +100,85 @@
       </div>
     </nav>
     <!-- accesorios -->
+
+    <!-- accesorios -->
+    <button class="sidebar-toggle" aria-label="Mostrar categorías">
+      <i class="bi bi-filter-left"></i> Ver categorías
+    </button>
+
+    <div class="layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <i class="bi bi-grid-fill"></i>
+          <h5>Categorías</h5>
+        </div>
+
+        <ul class="menu">
+          <li class="item open">
+            <div class="categoria">
+              <span class="cat-label"
+                ><i class="bi bi-phone"></i> Celulares</span
+              >
+              <i class="bi bi-chevron-right arrow"></i>
+            </div>
+            <ul class="sub">
+              <li>Fundas</li>
+              <li>Cargadores</li>
+              <li>Audífonos</li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <div class="categoria">
+              <span class="cat-label"
+                ><i class="bi bi-laptop"></i> Computadores</span
+              >
+              <i class="bi bi-chevron-right arrow"></i>
+            </div>
+            <ul class="sub">
+              <li>Mouse</li>
+              <li>Teclados</li>
+              <li>Bases</li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <div class="categoria">
+              <span class="cat-label"
+                ><i class="bi bi-cpu"></i> Componentes</span
+              >
+              <i class="bi bi-chevron-right arrow"></i>
+            </div>
+            <ul class="sub">
+              <li>RAM</li>
+              <li>SSD</li>
+              <li>GPU</li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <div class="categoria">
+              <span class="cat-label"
+                ><i class="bi bi-headphones"></i> Accesorios</span
+              >
+              <i class="bi bi-chevron-right arrow"></i>
+            </div>
+            <ul class="sub">
+              <li>Audífonos</li>
+              <li>Micrófonos</li>
+              <li>Bocinas</li>
+            </ul>
+          </li>
+        </ul>
+
+        
+
+      <!-- CONTENIDO -->
+      <main class="contenido">
+        <h2>Productos</h2>
+      </main>
+    </div>
 
     <!-- footer -->
     <footer class="footer">
@@ -153,26 +232,8 @@
 
     <!-- LINK DE SWIPER -->
 
-    <script src="../vendor/swiper/swiper-bundle.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../vendor/swiper/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        loop: true,
-
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        breakpoints: {
-          0: { slidesPerView: 1 },
-          576: { slidesPerView: 2 },
-          992: { slidesPerView: 4 },
-        },
-      });
-    </script>
+    <script src="accesorios.js"></script>
   </body>
 </html>
